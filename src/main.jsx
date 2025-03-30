@@ -6,7 +6,7 @@ import Content from './Content.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <App/>
     <Content/>
   </StrictMode>,
 )

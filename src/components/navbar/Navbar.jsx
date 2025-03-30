@@ -9,11 +9,11 @@ const Navbar = () => {
       </div>
       <div className="flex space-x-5 justify- items-center">
         <ul className="flex space-x-5 item-center ">
-          <li className="">Home</li>
-          <li>Program</li>
-          <li>About us</li>
-          <li>Campus</li>
-          <li> Testimonials</li>
+          <li className="pointer">Home</li>
+          <li className="pointer">Program</li>
+          <li className="pointer">About us</li>
+          <li className="pointer">Campus</li>
+          <li className="pointer"> Testimonials</li>
         </ul>
         <button className="bg-white p-2 text-black rounded-full border-1 border-black cursor-pointer">
           Contact-us

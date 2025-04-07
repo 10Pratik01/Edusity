@@ -20,3 +20,8 @@ body {
 .c000F38{
   color:#000F38; 
 }
+
+.navbag{
+  background-color: rgb(25, 25, 158);
+  transition: 0.5s;
+}

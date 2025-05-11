@@ -8,7 +8,7 @@ const Content = () => {
             <div className="text-block text-white text-center w-200">
                 <h1 className="text-6xl text-cente">We Ensure better education for a better world</h1>
                 <p className="line-clamp-3 m-4 text-1xl">Our cutting-edge curriculum is designed to empover students with the knowledge, skills, and experiences needed to excel in the dynamic field of education</p>
-                <button className="bg-white text-black rounded-full p-3 pt-2 pb-2 text-l cursor-pointer hover:bg-grey-200 ">Explore more</button>
+                <button className="bg-white text-black rounded-full p-3 pt-2 pb-2 text-l cursor-pointer hover:bg-grey-200 hover:scale-106 transition ease-in-out duration-100 ">Explore more</button>
             </div>
         </div>
       </div>

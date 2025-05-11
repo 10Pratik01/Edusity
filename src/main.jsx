@@ -6,7 +6,8 @@ import Title from "./components/Title/Title.jsx";
 import Content from "./components/home_content/Content.jsx";
 import Program from "./components/programs/Program.jsx";
 import About from "./components/About/About.jsx"
-import Campus from "./components/Campus/Campus.jsx"; 
+import Campus from "./components/Campus/campus.jsx"
+import Testimonials from "./components/Testimonials/Testimonials.jsx"
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -17,7 +18,9 @@ createRoot(document.getElementById("root")).render(
       <Program />
       <About /> 
       <Title subTitle='Gallery' title='Campus Photos' />
-      <Campus />
+      <Campus /> 
+      <Title subTitle='Testimonials' title='What student says' /> 
+      <Testimonials /> 
     </div>
   </StrictMode>
 );

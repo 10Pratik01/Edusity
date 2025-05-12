@@ -8,6 +8,8 @@ import Program from "./components/programs/Program.jsx";
 import About from "./components/About/About.jsx"
 import Campus from "./components/Campus/campus.jsx"
 import Testimonials from "./components/Testimonials/Testimonials.jsx"
+import Contact from "./components/Contact/Contact.jsx"
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -21,6 +23,8 @@ createRoot(document.getElementById("root")).render(
       <Campus /> 
       <Title subTitle='Testimonials' title='What student says' /> 
       <Testimonials /> 
+      <Title subTitle='Contact us' title='Get in touch' />
+      <Contact/> 
     </div>
   </StrictMode>
 );

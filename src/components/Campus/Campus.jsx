@@ -37,7 +37,7 @@ const Campus = () => {
         />
       </div>
       <div className="flex justify-center mb-10 align-center items-center mt-1/2">
-        <button className="bg-blue-700 text-white rounded-full p-4 pt-3 pb-3 flex cursor-pointer hover:bg-blue-600">
+        <button className="bg-violet-800 text-white rounded-full p-4 pt-3 pb-3 flex cursor-pointer hover:scale-105 hover:bg-violet-700">
           See more images{" "}
           <div className="flex items-center">
             <img className="w-5 h-3 ml-2 " src={whitearr} alt="" />

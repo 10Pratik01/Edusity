@@ -9,7 +9,7 @@ import About from "./components/About/About.jsx"
 import Campus from "./components/Campus/campus.jsx"
 import Testimonials from "./components/Testimonials/Testimonials.jsx"
 import Contact from "./components/Contact/Contact.jsx"
-
+import Footer from "./components/Footer/Footer.jsx"
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -25,6 +25,7 @@ createRoot(document.getElementById("root")).render(
       <Testimonials /> 
       <Title subTitle='Contact us' title='Get in touch' />
       <Contact/> 
+      <Footer/> 
     </div>
   </StrictMode>
 );

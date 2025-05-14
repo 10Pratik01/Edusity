@@ -27,7 +27,7 @@ const Constact = () => {
     }
   };
   return (
-    <div id="contact" className="justify-around m-10 mb-20 flex">
+    <div id="contact" className="justify-around m-10 mb-20 flex" >
       <div className="m-20 w-[40%] mt-0 mb-auto" >
         <h3 className="flex text-2xl justify-center mb-5"><b>Send a message</b> <img className="w-[35px] ml-2" src={msg_img} alt="" /></h3>
         <p className="ml-10">

@@ -28,7 +28,6 @@ const Testimonials = () => {
     <div
       className="relative p-40 m-20 pt-0 pb-0 ml-auto mr-auto h-80"
       id="testimonials"
-
     >
       <img
         src={next_icon}

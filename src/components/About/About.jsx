@@ -4,7 +4,7 @@ import play_btn from "../../assets/play-icon.png";
 
 const About = () => {
   return (
-    <div className="flex flex-row justify-evenly mt-30 mb-10">
+    <div className="flex flex-row justify-evenly mt-30 mb-10" id="about">
       <div className="relative  ">
         <img className="rounded-2xl block w-120" src={about_img} alt="" />
         <div className="absolute flex flex-col rounded-3xl justify-center align-middle items-center top-0 bottom-0 left-0 right-0 opacity-0  hover:opacity-100 pointer transition-opacity">

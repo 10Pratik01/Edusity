@@ -10,7 +10,7 @@ const Campus = () => {
   const [hover, setHover] = useState(false); 
   useEffect
   return (
-    <div id="main_div">
+    <div id="campus" >
       <div
         className="flex justify-center gap-6 mt-10 mb-10"
         id="campus_images "

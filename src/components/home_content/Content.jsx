@@ -3,7 +3,7 @@ import React from "react";
 const Content = () => {
   return (
     <>
-      <div className=" bg-[url(/src/assets/hero.png)] h-screen w-screen bg-cover bg-center">
+      <div className=" bg-[url(/src/assets/hero.png)] h-screen w-screen bg-cover bg-center" name='hero' id="hero">
         <div className="bg-gradient-to-r from-indigo-900/60 to-indigo-900/60 b h-screen w-screen display flex justify-center items-center">
             <div className="text-block text-white text-center w-200">
                 <h1 className="text-6xl text-cente">We Ensure better education for a better world</h1>

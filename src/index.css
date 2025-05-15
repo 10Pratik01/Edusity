@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;900&display=swap");
 @import "tailwindcss";
 
 * {
@@ -7,22 +7,39 @@
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
 
-.c212EA0{
-  color:#212EA0; 
+.c212EA0 {
+  color: #212ea0;
 }
-.c000F38{
-  color:#000F38; 
+.c000F38 {
+  color: #000f38;
 }
 
-.navbag{
+.navbag {
   background-color: rgb(25, 25, 158);
   transition: 0.5s;
 }
 
+@media (max-width: 840px) {
+  .nav_840px {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom:0; 
+    background: #212ea0;
+    z-index: -1;
+    width: 200px;
+    padding-top: 70px;
+    transition: 0.5s;
+  }
+
+  .m_25_40{
+    margin: 25px 40px;
+  }
+}

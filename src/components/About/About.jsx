@@ -4,16 +4,16 @@ import play_btn from "../../assets/play-icon.png";
 
 const About = () => {
   return (
-    <div className="flex flex-row justify-evenly mt-30 mb-10" id="about">
-      <div className="relative  ">
+    <div className="flex flex-row justify-evenly mt-30 mb-10  [@media(max-width:850px)]:flex-col " id="about">
+      <div className="relative  [@media(max-width:850px)]:basis-[100%] [@media(max-width:850px)]:order-2 [@media(max-width:850px)]:ml-auto [@media(max-width:850px)]:mr-auto">
         <img className="rounded-2xl block w-120" src={about_img} alt="" />
-        <div className="absolute flex flex-col rounded-3xl justify-center align-middle items-center top-0 bottom-0 left-0 right-0 opacity-0  hover:opacity-100 pointer transition-opacity">
+        <div className="absolute flex flex-col rounded-3xl justify-center align-middle items-center top-0 bottom-0 left-0 right-0 opacity-0  hover:opacity-100 pointer transition-opacity  [@media(max-width:850px)]:opacity-50  [@media(max-width:850px)]:ml-auto [@media(max-width:850px)]:mr-auto">
 
-        <img className="w-20 justify-center align-center" src={play_btn} alt="" />
+        <img className="w-20 justify-center align-center " src={play_btn} alt="" />
         </div>
       </div>
 
-      <div className="flex flex-col w-180  ">
+      <div className="flex flex-col w-180 ml-5 [@media(max-width:850px)]:basis-[100%] max-w-[95%] ">
         <h3  className="font-bold text-2xl mb-2 text-blue-900">About university</h3>
         <h2 className="text-bold text-xl text-blue-950 text-bold font-bold mb-1">Nurturing Tommrow's Leaders Today</h2>
         <p>
@@ -22,7 +22,7 @@ const About = () => {
           designed to empower students with the knowledge, skills, and
           experiences needed to excel in the dynamic field of education.
         </p>
-        <p>
+        <p className="[@media(max-width:500px)]:hidden">
           With a focus on innovation, hands-on learning, and personalized
           mentorship, our programs prepare aspiring educators to make a
           meaningful impact in classrooms, schools, and communities.

@@ -48,3 +48,7 @@ body {
     right:-200px; 
   }
 }
+
+@media (max-width: 480px) {
+  
+}

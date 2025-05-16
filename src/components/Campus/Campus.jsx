@@ -12,7 +12,7 @@ const Campus = () => {
   return (
     <div id="campus" >
       <div
-        className="flex justify-center gap-6 mt-10 mb-10"
+        className="flex justify-center gap-6 mt-10 mb-10 overflow-x-hidden"
         id="campus_images "
       >
         <img

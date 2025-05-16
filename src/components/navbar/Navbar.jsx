@@ -2,16 +2,24 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import logo from "../../assets/logo.png";
-import '../../index.css'
+import menu_icon from "../../assets/menu-icon.png";
+// importing index css for adding { "nav_840px", "m_25_40" }  stylings. 
+import '../../index.css'; 
+
 
 const Navbar = () => {
   const [sticky, setsticky] = useState(false);
+  const[show, setshow] = useState(false); 
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       window.scrollY > 50 ? setsticky(true) : setsticky(false);
     });
   }, []);
+
+  const toggleMenu = () =>{
+    show ? setshow(false) : setshow(true); 
+  }
 
   return (
     <nav
@@ -24,7 +32,7 @@ const Navbar = () => {
       <img src={logo} alt="" className="w-50 lg:w-[150px] [@media(max-width:1000px)]:w-[140px]" />
 
 {/* nav_840px is written in index.css file */}
-      <ul className="nav_840px"> 
+      <ul className={`nav_840px ${show?'':'hide-mobile-menu'}`}> 
         <li className="pointer inline-block m-2 ml-5 mr-5 text-[16px] hover:scale-105 [@media(max-width:1000px)]:m-[10px] [@media(max-width:1000px )]:ml-[15px] [@media(max-width:1000px)]:mr-[15px] [@media(max-width:840px)]:block m_25_40">
           <Link to="hero" smooth={true} offset={0} duration={500}>
             Home
@@ -59,6 +67,7 @@ const Navbar = () => {
           </button>
         </li>
       </ul>
+      <img src={menu_icon} onClick={toggleMenu} alt="" className="hidden [@media(max-width:840px)]:block [@media(max-width:840px)]:w-7 [@media(max-width:840px)]:cursor-pointer right-auto mr-10"/>
     </nav>
   );
 };

@@ -32,7 +32,8 @@ body {
     top: 0;
     right: 0;
     bottom:0; 
-    background: #212ea0;
+    background: #5a21b663;
+    backdrop-filter: blur(8px);
     z-index: -1;
     width: 200px;
     padding-top: 70px;
@@ -41,5 +42,9 @@ body {
 
   .m_25_40{
     margin: 25px 40px;
+  }
+
+  .hide-mobile-menu{
+    right:-200px; 
   }
 }

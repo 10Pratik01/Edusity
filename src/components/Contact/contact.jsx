@@ -54,7 +54,7 @@ const Constact = () => {
             <label for="your_msg">Message </label>
             <textarea name="your_msg" id="your_msg" cols={30} rows={6} placeholder="Enter your message" className="w-full h-20 p-2 bg-violet-200 mb-3 rounded-sm"></textarea>
             <br />
-            <button type="submit" className=" border-2 border-black rounded-4xl p-5 pt-2 pb-2 text-white m-3 bg-violet-800 hover:scale-105 transition ease-in-out duration-200 cursor-pointer flex end-0 flex hover:bg-violet-700"> Submit <div className="flex items-center "><img src={arrow} alt="" className=" ml-2 w-6 h-3 "/></div> </button>
+            <button type="submit" className=" border-2 border-black rounded-4xl p-5 pt-2 pb-2 text-white m-3 bg-violet-800 hover:scale-105 transition ease-in-out duration-200 cursor-pointer flex end-0 hover:bg-violet-700"> Submit <div className="flex items-center "><img src={arrow} alt="" className=" ml-2 w-6 h-3 "/></div> </button>
           </form>
           <span className="block m-[20px] ml-0 mr-0 ">{result} </span>
       </div>

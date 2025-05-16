@@ -5,9 +5,9 @@ import play_btn from "../../assets/play-icon.png";
 const About = () => {
   return (
     <div className="flex flex-row justify-evenly mt-30 mb-10  [@media(max-width:850px)]:flex-col " id="about">
-      <div className="relative  [@media(max-width:850px)]:basis-[100%] [@media(max-width:850px)]:order-2 [@media(max-width:850px)]:ml-auto [@media(max-width:850px)]:mr-auto">
-        <img className="rounded-2xl block w-120" src={about_img} alt="" />
-        <div className="absolute flex flex-col rounded-3xl justify-center align-middle items-center top-0 bottom-0 left-0 right-0 opacity-0  hover:opacity-100 pointer transition-opacity  [@media(max-width:850px)]:opacity-50  [@media(max-width:850px)]:ml-auto [@media(max-width:850px)]:mr-auto">
+      <div className="relative  [@media(max-width:850px)]:basis-[100%] [@media(max-width:850px)]:order-2  [@media(max-width:850px)]:ml-auto [@media(max-width:850px)]:mr-auto ">
+        <img className="rounded-2xl block w-120 [@media(max-width:650px)]:w-90 [@media(max-width:650px)]:mt-5 " src={about_img} alt="" />
+        <div className="absolute flex flex-col rounded-3xl justify-center align-middle items-center top-0 bottom-0 left-0 right-0 opacity-0  hover:opacity-100 pointer transition-opacity  [@media(max-width:1000px)]:opacity-50 [@media(max-width:850px)]:ml-auto [@media(max-width:850px)]:mr-auto">
 
         <img className="w-20 justify-center align-center " src={play_btn} alt="" />
         </div>

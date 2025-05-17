@@ -8,20 +8,34 @@ import user4 from "../../assets/user-4.png";
 
 const Testimonials = () => {
     const slider = useRef(); 
+    const back_hide = useRef();
+    const front_hide = useRef(); 
     let tx=0; 
+    
     let temp = 0
     const forward = () => {
         if(tx>-75){
             tx -= 25; 
         }
         slider.current.style.transform = `translateX(${tx}%)`
-        
+        if(tx == -75){
+          front_hide.current.style.visibility =`hidden`
+        }else{
+          front_hide.current.style.visibility =`visible`
+          back_hide.current.style.visibility =`visible`
+        }
     }
     const backward = () => {
         if(tx<0){
             tx +=25; 
         }
         slider.current.style.transform = `translateX(${tx}%)`
+        if(tx == 0){
+          back_hide.current.style.visibility =`hidden`
+        }else{
+          front_hide.current.style.visibility =`visible`
+           back_hide.current.style.visibility =`visible`
+        }
     }
   return (
 
@@ -32,12 +46,14 @@ const Testimonials = () => {
       <img
         src={next_icon}
         alt=""
+        ref={front_hide}
         className="bg-violet-800 absolute -translate-y-6/12 top-6/12 right-11 p-4 w-13 rounded-4xl cursor-pointer hover:scale-105 duration-75 hover:bg-violet-700 [@media(max-width:850)]:p-[10px] [@media(max-width:850)]:w-[35px] "
         onClick={forward}
       />
       <img
         src={back_icon}
         alt=""
+        ref={back_hide}
         className="bg-violet-800 absolute -translate-y-6/12 top-6/12 right-auto left-11 p-4 w-13 rounded-4xl cursor-pointer hover:scale-105 duration-75 hover:bg-violet-700"
         onClick={backward}
       />

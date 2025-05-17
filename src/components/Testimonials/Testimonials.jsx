@@ -11,7 +11,7 @@ const Testimonials = () => {
     let tx=0; 
     let temp = 0
     const forward = () => {
-        if(tx>-50){
+        if(tx>-75){
             tx -= 25; 
         }
         slider.current.style.transform = `translateX(${tx}%)`
@@ -26,13 +26,13 @@ const Testimonials = () => {
   return (
 
     <div
-      className="relative p-40 m-20 pt-0 pb-0 ml-auto mr-auto h-80"
-      id="testimonials"
+      className="relative p-20 pt-0 pb-0 m-20 ml-auto mr-auto [@media(max-width:850)]:pl-10 [@media(max-width:850)]:pr-10 [@media(max-width:850)]:h-[120px]  "
+      id="testimonials "
     >
       <img
         src={next_icon}
         alt=""
-        className="bg-violet-800 absolute -translate-y-6/12 top-6/12 right-11 p-4 w-13 rounded-4xl cursor-pointer hover:scale-105 duration-75 hover:bg-violet-700"
+        className="bg-violet-800 absolute -translate-y-6/12 top-6/12 right-11 p-4 w-13 rounded-4xl cursor-pointer hover:scale-105 duration-75 hover:bg-violet-700 [@media(max-width:850)]:p-[10px] [@media(max-width:850)]:w-[35px] "
         onClick={forward}
       />
       <img
@@ -42,12 +42,12 @@ const Testimonials = () => {
         onClick={backward}
       />
 
-      <div id="slider" className="overflow-hidden">
-        <ul ref={slider} className="flex overflow-x-hidden w-[200%] duration-2s transition ease-in-out h-80 ">
-          <li className="list-none w-[50%] p-5 m-5 shadow-lg shadow-gray-400 ">
-            <div id="slide" className="">
-              <div id="user_info" className="flex mb-10">
-                <img src={user1} alt="" className="border-3 border-blue-500 w-20 rounded-full" />
+      <div id="slider" className="overflow-x-hidden">
+        <ul ref={slider} className="flex w-[200%] [@media(max-width:600px)]:w-[400%] duration-2s transition ease-in-out  ">
+          <li className="list-none w-[50%] [@media(max-width:600px)]:w-[100%] [@media(max-width:850)]:h-full p-5 m-5 shadow-lg shadow-gray-400 [@media(max-width:850px)]:p-2 ">
+            <div id="slide" className="[@media(max-width:850px)]:p-2">
+              <div id="user_info" className=" mb-10 [@media(max-width:740px)]:mb-2 [@media(min-width:740px)]:flex">
+                <img src={user1} alt="" className="border-3 border-blue-500 w-20 rounded-full [@media(max-width:850px)]:w-12 [@media(max-width:850px)]:border-blue-500  " />
                 <div className="text-center mt-auto mb-auto ml-5 text-xl ">
                   <h3 className="font-bold">William jackson</h3>
                   <span>Edusity, USA </span>
@@ -61,10 +61,10 @@ const Testimonials = () => {
               </p>
             </div>
           </li>
-          <li className="list-none w-[50%] p-5  m-5 shadow-lg shadow-gray-400 ">
+          <li className="list-none w-[50%] p-5 [@media(max-width:600px)]:w-[100%] m-5 shadow-lg shadow-gray-400 [@media(max-width:850px)]:p-2 ">
             <div id="slide" className="">
-              <div id="user_info" className="flex mb-10">
-                <img src={user2} alt="" className="border-3 border-blue-500 w-20 rounded-full" />
+              <div id="user_info" className="  mb-10 [@media(max-width:740px)]:mb-2 [@media(min-width:740px)]:flex">
+                <img src={user2} alt="" className="border-3 border-blue-500 w-20 rounded-full [@media(max-width:850px)]:w-12 [@media(max-width:850px)]:border-blue-500" />
                 <div className="text-center mt-auto mb-auto ml-5 text-xl ">
                   <h3 className="font-bold">William jackson</h3>
                   <span>Edusity, USA </span>
@@ -78,10 +78,10 @@ const Testimonials = () => {
               </p>
             </div>
           </li>
-          <li className="list-none w-[50%] p-5  m-5 shadow-lg shadow-gray-400 ">
+          <li className="list-none w-[50%] [@media(max-width:600px)]:w-[100%] p-5  m-5 shadow-lg shadow-gray-400 [@media(max-width:850px)]:p-2">
             <div id="slide" className="">
-              <div id="user_info" className="flex mb-10">
-                <img src={user3} alt="" className="border-3 border-blue-500 w-20 rounded-full" />
+              <div id="user_info" className=" mb-10 [@media(max-width:740px)]:mb-2 [@media(min-width:740px)]:flex">
+                <img src={user3} alt="" className="border-3 border-blue-500 w-20 rounded-full [@media(max-width:850px)]:w-12 [@media(max-width:850px)]:border-blue-500" />
                 <div className="text-center mt-auto mb-auto ml-5 text-xl ">
                   <h3 className="font-bold">William jackson</h3>
                   <span>Edusity, USA </span>
@@ -95,10 +95,10 @@ const Testimonials = () => {
               </p>
             </div>
           </li>
-          <li className="list-none w-[50%] p-5  m-5 shadow-lg shadow-gray-400 ">
+          <li className="list-none w-[50%] p-5 [@media(max-width:600px)]:w-[100%] m-5 shadow-lg shadow-gray-400 [@media(max-width:850px)]:p-2">
             <div id="slide" className="">
-              <div id="user_info" className="flex mb-10">
-                <img src={user4} alt="" className="border-3 border-blue-500 w-20 rounded-full" />
+              <div id="user_info" className=" mb-10 [@media(max-width:740px)]:mb-2 [@media(min-width:740px)]:flex">
+                <img src={user4} alt="" className="border-3 border-blue-500 w-20 rounded-full [@media(max-width:850px)]:w-12 [@media(max-width:850px)]:border-blue-500 " />
                 <div className="text-center mt-auto mb-auto ml-5 text-xl ">
                   <h3 className="font-bold">William jackson</h3>
                   <span>Edusity, USA </span>

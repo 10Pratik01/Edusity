@@ -12,7 +12,7 @@ const Campus = () => {
   return (
     <div id="campus" className="w-[90%] ml-auto mr-auto">
       <div
-        className="flex justify-between align-middle mt-10 mb-10 overflow-x-hidden [@media(max-width:850px)]:flex-wrap items-center ml-5 "
+        className="flex justify-between align-middle mt-10 mb-10 overflow-x-hidden min-h-110 [@media(max-width:850px)]:flex-wrap items-center ml-5 "
         id="campus_images "
       >
         <img

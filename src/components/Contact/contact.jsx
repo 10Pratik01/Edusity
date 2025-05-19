@@ -1,6 +1,10 @@
 import React from "react";
 import msg_img from '../../assets/msg-icon.png'
 import arrow from "../../assets/white-arrow.png"
+import mail_img from "../../assets/mail-icon.png"
+import phone_img from '../../assets/phone-icon.png'
+import location_img from "../../assets/location-icon.png"
+
 const Constact = () => {
   const [result, setResult] = React.useState("");
 
@@ -37,9 +41,9 @@ const Constact = () => {
           university community.
         </p>
         <ul className="list-disc ml-20 mt-2">
-          <li>Contact@Edusity.dev</li>
-          <li>+91 2938402938</li>
-          <li>Address........ </li>
+          <li className="flex gap-2"> <img src={mail_img} alt="" className=" h-5"/>Contact@Edusity.dev</li>
+          <li className="flex gap-2"><img src={phone_img} alt="" className="h-5 " /> +91 2938402938</li>
+          <li className="flex gap-2"> <img src={location_img} alt="" className="h-5" />Address........ </li>
         </ul>
       </div>
 

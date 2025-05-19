@@ -41,7 +41,7 @@ const Testimonials = () => {
 
     <div
       className="relative p-20 pt-0 pb-0 m-20 ml-auto mr-auto [@media(max-width:850)]:pl-10 [@media(max-width:850)]:pr-10 [@media(max-width:850)]:h-[120px]  "
-      id="testimonials "
+      id="Testimonials"
     >
       <img
         src={next_icon}

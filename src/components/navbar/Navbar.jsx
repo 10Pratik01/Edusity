@@ -54,8 +54,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="pointer inline-block m-2 ml-5 mr-5 text-[16px] hover:scale-105 [@media(max-width:1000px)]:m-[10px] [@media(max-width:1000px )]:ml-[15px] [@media(max-width:1000px)]:mr-[15px] [@media(max-width:840px)]:block m_25_40 ">
-          <Link to="testimonials" smooth={true} offset={-250} duration={500}>
-            {" "}
+          <Link to="Testimonials" smooth={true} offset={-230} duration={500}>
             Testimonials
           </Link>
         </li>

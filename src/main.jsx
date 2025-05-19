@@ -8,7 +8,7 @@ import Program from "./components/programs/Program.jsx";
 import About from "./components/About/About.jsx"
 import Campus from "./components/Campus/Campus.jsx"
 import Testimonials from "./components/Testimonials/Testimonials.jsx"
-import Contact from "./components/Contact/Contact.jsx"
+import Contact from "./components/Contact/contact.jsx"
 import Footer from "./components/Footer/Footer.jsx"
 
 createRoot(document.getElementById("root")).render(

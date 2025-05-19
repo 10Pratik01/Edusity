@@ -5,7 +5,7 @@ import mail_img from "../../assets/mail-icon.png"
 import phone_img from '../../assets/phone-icon.png'
 import location_img from "../../assets/location-icon.png"
 
-const Constact = () => {
+const Contact = () => {
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
@@ -66,4 +66,4 @@ const Constact = () => {
   );
 };
 
-export default Constact;
+export default Contact;

@@ -47,14 +47,14 @@ const Testimonials = () => {
         src={next_icon}
         alt=""
         ref={front_hide}
-        className="bg-violet-800 absolute -translate-y-6/12 top-6/12 right-11 p-4 w-13 rounded-4xl cursor-pointer hover:scale-105 duration-75 hover:bg-violet-700 [@media(max-width:850)]:p-[10px] [@media(max-width:850)]:w-[35px] [@media(max-width:850)]:right-8"
+        className="bg-violet-800 absolute -translate-y-6/12 top-6/12 right-11 p-4 w-13 rounded-4xl cursor-pointer hover:scale-105 duration-75 hover:bg-violet-700 [@media(max-width:850)]:p-[10px] [@media(max-width:850)]:w-[35px] [@media(max-width:850)]:right-8 z-2"
         onClick={forward}
       />
       <img
         src={back_icon}
         alt=""
         ref={back_hide}
-        className="bg-violet-800 absolute -translate-y-6/12 top-6/12 right-auto left-11 p-4 w-13 rounded-4xl cursor-pointer hover:scale-105 duration-75 hover:bg-violet-700 [@media(max-width:850)]:p-[10px] [@media(max-width:850)]:w-[35px] [@media(max-width:850)]:left-8"
+        className="bg-violet-800 absolute -translate-y-6/12 top-6/12 right-auto left-11 p-4 w-13 rounded-4xl cursor-pointer hover:scale-105 duration-75 hover:bg-violet-700 [@media(max-width:850)]:p-[10px] [@media(max-width:850)]:w-[35px] [@media(max-width:850)]:left-8 z-2 "
         onClick={backward}
       />
 

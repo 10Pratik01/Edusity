@@ -31,23 +31,23 @@ const Constact = () => {
     }
   };
   return (
-    <div id="contact" className="justify-around m-10 mb-20 flex" >
-      <div className="m-20 w-[40%] mt-0 mb-auto" >
-        <h3 className="flex text-2xl justify-center mb-5"><b>Send a message</b> <img className="w-[35px] ml-2" src={msg_img} alt="" /></h3>
-        <p className="ml-10">
+    <div id="contact" className="justify-around m-10 mb-20 flex [@media(max-width:700px)]:block " >
+      <div className="m-20 w-[40%] mt-0 mb-auto  [@media(max-width:600px)]:w-[60%] [@media(max-width:400px)]:ml-12 [@media(max-width:450px)]:w-[70%] " >
+        <h3 className="flex text-2xl justify-center mb-5"><b className="flex w-fit">Send a message</b> <img className="w-[35px] ml-2 [@media(max-width:450px)]:w-8 [@media(max-width:450px)]:h-8" src={msg_img} alt="" /></h3>
+        <p className="ml-10[@media(max-width:450px)]:ml-5 ">
           Feel free to reach out through contact form or find out contact
           information below. your feedback, questions, and suggestions are
           important to us as we strive to provide exceptional service to our
           university community.
         </p>
-        <ul className="list-disc ml-20 mt-2">
+        <ul className="list-disc ml-20 mt-2 [@media(max-width:700px)]:pl-5 [@media(max-width:440px)]:ml-10">
           <li className="flex gap-2"> <img src={mail_img} alt="" className=" h-5"/>Contact@Edusity.dev</li>
           <li className="flex gap-2"><img src={phone_img} alt="" className="h-5 " /> +91 2938402938</li>
           <li className="flex gap-2"> <img src={location_img} alt="" className="h-5" />Address........ </li>
         </ul>
       </div>
 
-      <div className="w-[40%]">
+      <div className="w-[40%] [@media(max-width:700px)]:ml-35 [@media(max-width:700px)]:mt-5">
           <form onSubmit={onSubmit}>
             <label for="name" > Your Name </label> <br />
             <input type="text" id="name" placeholder="Your name" required  className="w-full h-10 p-2 bg-violet-200 rounded-sm mb-3"/>

@@ -1,64 +1,88 @@
-Edusity
-Edusity is a modern, responsive college website designed to showcase institutional information, academic programs, and campus life. Built using React and Vite, it offers a fast and interactive user experience.
+<h1>Edusity</h1>
+Edusity is a modern, responsive college website designed to showcase institutional information, academic programs, and campus life. Built using React and Vite, it offers a fast and interactive user experience.<br>
 
-🚀 Features
-      Responsive Design: Optimized for desktops, tablets, and mobile devices.
-      Single Page Application (SPA): Seamless navigation without page reloads.
-      Modern UI/UX: Clean and intuitive interface for enhanced user engagement.
-      Fast Performance: Leveraging Vite for rapid development and optimized builds.
+<h2>🚀 Features</h2>
+<ol>
+      <li>Responsive Design: Optimized for desktops, tablets, and mobile devices.</li>
+      <li>Single Page Application (SPA): Seamless navigation without page reloads.</li>
+      <li>Modern UI/UX: Clean and intuitive interface for enhanced user engagement.</li>
+      <li>Fast Performance: Leveraging Vite for rapid development and optimized builds.</li>
+</ol>
 
-🛠️ Tech Stack
-      Frontend: React, HTML5, CSS3
-      Tooling: Vite, ESLint
-      Form Handling: Web3Forms
 
-📁 Project Structure
-Edusity/
-    ├── src/
-    │   ├── assets/                   # Static files (images, icons, etc.)
+<h2>🛠️ Tech Stack</h2>  
+<ol>
+      <li>Frontend: React, HTML5, CSS3</li>
+      <li>Tooling: Vite, ESLint</li>
+      <li>Form Handling: Web3Forms</li>
+</ol>
+
+<h2>📁 Project Structure</h2> 
+Edusity/ <br> 
+    ├── src/ <br> 
+    │   ├── assets/                   # Static files (images, icons, etc.) <br> 
     │   ├── components/
-    │   │   ├── About/                # About section
-    │   │   ├── Campus/               # Campus section
-    │   │   ├── Contact/              # Contact form (Web3Forms)
-    │   │   ├── Footer/               # Footer component
-    │   │   ├── Testimonials/         # Testimonials section
-    │   │   ├── Title/                # Title/header component
-    │   │   ├── home_content/         # Home page content
-    │   │   ├── navbar/               # Navigation bar
-    │   │   └── programs/             # Programs offered section
-    │   ├── index.css                 # Global styles
-    │   └── main.jsx                  # App entry point
-    ├── .gitignore
-    ├── README.md
-    ├── eslint.config.js
-    ├── index.html
-    ├── package.json
-    ├── package-lock.json
-    └── vite.config.js
+    │   │   ├── About/                # About section<br>
+    │   │   ├── Campus/               # Campus section<br>
+    │   │   ├── Contact/              # Contact form (Web3Forms)<br>
+    │   │   ├── Footer/               # Footer component<br>
+    │   │   ├── Testimonials/         # Testimonials section<br>
+    │   │   ├── Title/                # Title/header component<br>
+    │   │   ├── home_content/         # Home page content<br>
+    │   │   ├── navbar/               # Navigation bar<br>
+    │   │   └── programs/             # Programs offered section<br>
+    │   ├── index.css                 # Global styles<br>
+    │   └── main.jsx                  # App entry point<br>
+    ├── .gitignore<br>
+    ├── README.md<br>
+    ├── eslint.config.js<br>
+    ├── index.html<br>
+    ├── package.json<br>
+    ├── package-lock.json<br>
+    └── vite.config.js<br>
 
 
-📦 Getting Started
-  Prerequisites
-    Node.js (v14 or later)
-    npm or yarn
+<h2> 📦Getting Started </h2>
+  <h3>Prerequisites</h3>
+    <ul>
+          <li> Node.js (v14 or later)</li>
+          <li>npm or yarn</li>
+    </ul>
 
-  Installation
-    1. Clone the repository:
-        git clone https://github.com/10Pratik01/Edusity.git
-      cd Edusity
-    2. Install dependencies:
-        npm install
-    3. Start the development server:
-        npm run dev
+  <h3>Installation</h3>
+<ol>
+      <li>Clone the repository: <br> 
+            <ul>
+                  <li>git clone https://github.com/10Pratik01/Edusity.git</li>
+                  <li>cd Edusity</li>
+            </ul>
+      </li>
+      <li>Install dependencies: <br> 
+            <ul>
+                  <li> npm install</li>
+            </ul>
+      </li>
+      <li>Start the development server: <br> 
+            <ul>
+                  <li>npm run dev</li>
+            </ul>
+      </li>
+      
+</ol>
 
-📝 Changing the Web3Forms Access Key (Contact Form)
-      The contact form in Edusity uses Web3Forms for handling submissions.
-      To use your own Web3Forms access key:
-        1. Sign up at web3forms.com and generate your API key.
-        2. Open the contact form component located at:
-            src/components/Contact.jsx
-        3. Replace the existing access_key value in the Contact.jsx:
-            const onSubmit = async (event) => {
+<h2>📝 Changing the Web3Forms Access Key (Contact Form)</h2>
+      The contact form in Edusity uses Web3Forms for handling submissions.<br>
+      To use your own Web3Forms access key:<br>
+      <ol>
+            <li>Sign up at web3forms.com and generate your API key.</li>
+            <li> Open the contact form component located at:
+                  <ul>
+                        <li>src/components/Contact.jsx</li>
+                  </ul>
+            </li>
+            <li>
+                  Replace the existing access_key value in the Contact.jsx: <br>
+                   const onSubmit = async (event) => {
               event.preventDefault();
               setResult("Sending....");
               const formData = new FormData(event.target);
@@ -80,12 +104,17 @@ Edusity/
                 setResult(data.message);
               }
           };
-       4. Save and restart your development server if needed.          
+            </li>
+            <li>
+            Save and restart your development server if needed.
+            </li>
+      </ol>     
  
 
-📜 Scripts
-    npm run dev – Launch dev server
-    npm run build – Create a production build
-    npm run preview – Preview the production build locally
-
+<h2>📜 Scripts</h2>
+      <ul>
+          <li> npm run dev – Launch dev server</li>
+          <li>npm run build – Create a production build</li>
+          <li> npm run preview – Preview the production build locally</li>
+      </ul>
 
